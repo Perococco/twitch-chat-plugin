@@ -7,7 +7,7 @@
 
     <groupId>perobobbot.plugin</groupId>
     <artifactId>twitch-chat-parent</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>${plugin.name} - Parent POM</name>
