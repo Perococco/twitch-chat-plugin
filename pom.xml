@@ -8,7 +8,7 @@
     <parent>
         <groupId>perobobbot.plugin</groupId>
         <artifactId>twitch-chat-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
         <relativePath>parent/pom.xml</relativePath>
     </parent>
     <artifactId>twitch-chat</artifactId>
