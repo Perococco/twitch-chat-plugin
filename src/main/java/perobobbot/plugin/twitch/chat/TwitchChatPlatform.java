@@ -27,18 +27,8 @@ public class TwitchChatPlatform implements ChatPlatform, ChatPlatformPlugin, Dis
 
     private final Map<String, ConnectionData> connectionsPerNick = new HashMap<>();
 
-    private final SubscriptionHolder subscriptionHolder = new SubscriptionHolder();
-
     public TwitchChatPlatform(@NonNull Instants instants) {
         this.instants = instants;
-        this.subscriptionHolder.replaceWith(() -> {
-            final var viewerSaver = new ViewerSaver();
-            viewerSaver.start();
-            return Subscription.multi(
-                    this.listeners.addListener(viewerSaver),
-                    viewerSaver::requestStop
-            );
-        });
     }
 
     @Override

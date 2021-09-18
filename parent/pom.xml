@@ -14,7 +14,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>16</java.version>
+        <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <lombok.version>1.18.20</lombok.version>
@@ -61,7 +61,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-data-com</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
@@ -106,7 +106,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-command</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -126,7 +126,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-twitch-event-sub-api</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.reactivestreams</groupId>
@@ -136,7 +136,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-data-event</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.ow2.asm</groupId>
@@ -156,7 +156,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-backend-i18n</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.latencyutils</groupId>
@@ -166,7 +166,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-chat-core</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -201,7 +201,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-chat-advanced</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.eclipse.jetty</groupId>
@@ -216,17 +216,17 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-template</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-twitch-oauth-impl</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-access</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>io.netty</groupId>
@@ -241,7 +241,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-data-service</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -261,7 +261,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-rest-controller</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.eclipse.jetty.websocket</groupId>
@@ -291,7 +291,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-twitch-api</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>jplugman</groupId>
@@ -341,7 +341,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-plugin</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -366,7 +366,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-persistence</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml</groupId>
@@ -451,7 +451,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-twitch-oauth-api</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>jakarta.persistence</groupId>
@@ -506,7 +506,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-proxy</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -516,7 +516,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-spring</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.webjars</groupId>
@@ -541,12 +541,12 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-rest-com</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-twitch-client-webclient</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>io.netty</groupId>
@@ -556,7 +556,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-chat-websocket</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.eclipse.jetty</groupId>
@@ -581,7 +581,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-security-com</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>antlr</groupId>
@@ -631,12 +631,12 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-messaging</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-twitch-client-api</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.eclipse.jetty.websocket</groupId>
@@ -656,7 +656,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-eventsub</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.glassfish.jaxb</groupId>
@@ -691,12 +691,12 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-http</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-twitch-event-sub-manager</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.google.guava</groupId>
@@ -721,7 +721,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-data-security</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>jplugman</groupId>
@@ -776,7 +776,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-security-core</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.eclipse.jetty.websocket</groupId>
@@ -786,7 +786,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-data-domain</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.checkerframework</groupId>
@@ -796,7 +796,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-lang</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>io.netty</groupId>
@@ -806,7 +806,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-extension</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>io.netty</groupId>
@@ -841,7 +841,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-oauth-tools</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -861,7 +861,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-oauth</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.google.guava</groupId>
@@ -906,7 +906,7 @@
             <dependency>
                 <groupId>perobobbot</groupId>
                 <artifactId>perobobbot-data-jpa</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
