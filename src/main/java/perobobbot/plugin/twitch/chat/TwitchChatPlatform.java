@@ -37,7 +37,6 @@ public class TwitchChatPlatform implements ChatPlatform {
     @Override
     @Synchronized
     public @NonNull CompletionStage<ChatConnection> connect(@NonNull ChatConnectionInfo connectionInfo) {
-        System.out.println("Try connecting with "+connectionInfo.getNick());
         return connectionsPerNick.computeIfAbsent(connectionInfo.getNick(), n -> new Connector(connectionInfo).connect())
                                  .checkIsForBot(connectionInfo.getBotId())
                                  .getConnection()
