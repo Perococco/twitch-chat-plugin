@@ -4,6 +4,7 @@ import com.google.common.collect.ImmutableSet;
 import jplugman.api.*;
 import lombok.NonNull;
 import perobobbot.lang.Instants;
+import perobobbot.plugin.PerobobbotPlugin;
 
 public class TwitchChatPlugin implements Plugin {
 
@@ -16,12 +17,12 @@ public class TwitchChatPlugin implements Plugin {
 
     @Override
     public @NonNull Class<?> getServiceClass() {
-        return TwitchChatPlatform.class;
+        return PerobobbotPlugin.class;
     }
 
     @Override
     public @NonNull Object loadService(@NonNull ModuleLayer pluginLayer, @NonNull ServiceProvider serviceProvider) {
-        return new TwitchChatPlatform(serviceProvider.getSingleService(Instants.class));
+        return new TwitchChatPlatformPlugin(serviceProvider.getSingleService(Instants.class));
     }
 
 

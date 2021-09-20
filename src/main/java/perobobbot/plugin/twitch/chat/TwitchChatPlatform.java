@@ -10,7 +10,6 @@ import lombok.extern.log4j.Log4j2;
 import perobobbot.chat.core.ChatConnection;
 import perobobbot.chat.core.ChatPlatform;
 import perobobbot.lang.*;
-import perobobbot.plugin.ChatPlatformPlugin;
 import perococco.perobobbot.plugin.twitch.chat.TwitchChatConnection;
 
 import java.util.*;
@@ -18,8 +17,7 @@ import java.util.concurrent.CompletionStage;
 import java.util.function.Function;
 
 @Log4j2
-@Extension(point = ChatPlatformPlugin.class, version = "1.0.0")
-public class TwitchChatPlatform implements ChatPlatform, ChatPlatformPlugin, Disposable {
+public class TwitchChatPlatform implements ChatPlatform {
 
     private final @NonNull Instants instants;
 
@@ -37,19 +35,9 @@ public class TwitchChatPlatform implements ChatPlatform, ChatPlatformPlugin, Dis
     }
 
     @Override
-    public @NonNull String getName() {
-        return getPlatform().name();
-    }
-
-    @Override
-    public @NonNull ChatPlatform getChatPlatform() {
-        return this;
-    }
-
-    @Override
     @Synchronized
     public @NonNull CompletionStage<ChatConnection> connect(@NonNull ChatConnectionInfo connectionInfo) {
-
+        System.out.println("Try connecting with "+connectionInfo.getNick());
         return connectionsPerNick.computeIfAbsent(connectionInfo.getNick(), n -> new Connector(connectionInfo).connect())
                                  .checkIsForBot(connectionInfo.getBotId())
                                  .getConnection()
