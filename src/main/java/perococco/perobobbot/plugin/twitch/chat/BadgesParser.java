@@ -36,7 +36,7 @@ public class BadgesParser {
     @NonNull
     private Badge parseSingleBadge(String singleBadgeFromTag) {
         final String[] tokens = singleBadgeFromTag.split("/");
-        return new Badge(tokens[0], Integer.parseInt(tokens[1]));
+        return Badge.with(tokens[0], tokens[1]);
     }
 
 }

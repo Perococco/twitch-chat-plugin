@@ -7,11 +7,11 @@ import lombok.Value;
 public class Badge {
 
     @NonNull
-    public static Badge with(@NonNull String name, int version) {
+    public static Badge with(@NonNull String name, @NonNull String version) {
         return new Badge(name, version);
     }
 
     @NonNull String name;
 
-    int version;
+    @NonNull String version;
 }

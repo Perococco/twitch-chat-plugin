@@ -17,20 +17,22 @@ public class BadgesParserTest {
 
     public static Stream<Arguments> singleBadgeSample() {
         return Stream.of(
+                arguments("predictions/pink-2", Badge.with("predictions","pink-2")),
+                arguments("predictions/blue-1", Badge.with("predictions","blue-1")),
                 arguments("subscriber/0,sub-gift-leader/3",
-                          Badge.with("subscriber", 0),
-                          Badge.with("sub-gift-leader",3)
+                          Badge.with("subscriber", "0"),
+                          Badge.with("sub-gift-leader","3")
                 ),
                 arguments("subscriber/3,premium/1",
-                          Badge.with("subscriber",3),
-                          Badge.with("premium",1)
+                          Badge.with("subscriber","3"),
+                          Badge.with("premium","1")
                 ),
                 arguments(""),
-                arguments("subscriber/9,premium/1", Badge.with("subscriber",9), Badge.with("premium",1)),
+                arguments("subscriber/9,premium/1", Badge.with("subscriber","9"), Badge.with("premium","1")),
                 arguments("subscriber/10,premium/2,sub-gift-leader/10",
-                          Badge.with("subscriber",10),
-                          Badge.with("premium",2),
-                          Badge.with("sub-gift-leader",10)
+                          Badge.with("subscriber","10"),
+                          Badge.with("premium","2"),
+                          Badge.with("sub-gift-leader","10")
                           )
                 );
     }
