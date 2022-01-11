@@ -19,6 +19,11 @@ module perobobbot.twitch.chat {
 
     requires jplugman.api;
     requires perobobbot.data.service;
+    requires perobobbot.command;
+    requires perobobbot.http;
+    requires perobobbot.messaging;
+    requires perobobbot.eventsub;
+    requires perobobbot.twitch.client.api;
 
     provides Plugin with TwitchChatPlugin;
 

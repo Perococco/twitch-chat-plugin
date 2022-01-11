@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    
-    
+
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -14,7 +14,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>17</java.version>
+        <java.version>16</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <lombok.version>1.18.20</lombok.version>
@@ -29,9 +29,29 @@
                 <version>${lombok.version}</version>
             </dependency>
             <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-data-com</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-twitch-event-sub-api</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>2.17.0</version>
+            </dependency>
+            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-websocket</artifactId>
-                <version>2.5.1</version>
+                <version>2.5.4</version>
+            </dependency>
+            <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-rest-controller</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>io.swagger.core.v3</groupId>
@@ -44,9 +64,14 @@
                 <version>1.3.3</version>
             </dependency>
             <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-util-ajax</artifactId>
+                <version>9.4.43.v20210629</version>
+            </dependency>
+            <dependency>
                 <groupId>org.ow2.asm</groupId>
                 <artifactId>asm</artifactId>
-                <version>9.0</version>
+                <version>9.1</version>
             </dependency>
             <dependency>
                 <groupId>org.springdoc</groupId>
@@ -54,19 +79,9 @@
                 <version>1.5.8</version>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-client</artifactId>
-                <version>9.4.42.v20210604</version>
-            </dependency>
-            <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-data-com</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-core</artifactId>
-                <version>2.12.3</version>
+                <groupId>org.eclipse.jetty.websocket</groupId>
+                <artifactId>websocket-client</artifactId>
+                <version>9.4.43.v20210629</version>
             </dependency>
             <dependency>
                 <groupId>org.atteo</groupId>
@@ -84,9 +99,14 @@
                 <version>1.5.8</version>
             </dependency>
             <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>2.12.4</version>
+            </dependency>
+            <dependency>
                 <groupId>org.ow2.asm</groupId>
                 <artifactId>asm-analysis</artifactId>
-                <version>9.0</version>
+                <version>9.1</version>
             </dependency>
             <dependency>
                 <groupId>net.bytebuddy</groupId>
@@ -94,29 +114,24 @@
                 <version>1.11.2</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-data-jpa</artifactId>
-                <version>2.5.1</version>
-            </dependency>
-            <dependency>
                 <groupId>org.springdoc</groupId>
                 <artifactId>springdoc-openapi-webmvc-core</artifactId>
                 <version>1.5.8</version>
             </dependency>
             <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-command</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-jpa</artifactId>
+                <version>2.5.4</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter</artifactId>
-                <version>2.5.1</version>
+                <version>2.5.4</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-core</artifactId>
-                <version>5.5.0</version>
+                <version>5.5.2</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate.validator</groupId>
@@ -125,7 +140,7 @@
             </dependency>
             <dependency>
                 <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-twitch-event-sub-api</artifactId>
+                <artifactId>perobobbot-access</artifactId>
                 <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
@@ -134,14 +149,14 @@
                 <version>1.0.3</version>
             </dependency>
             <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-data-event</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-xml</artifactId>
+                <version>9.4.43.v20210629</version>
             </dependency>
             <dependency>
                 <groupId>org.ow2.asm</groupId>
                 <artifactId>asm-tree</artifactId>
-                <version>9.0</version>
+                <version>9.1</version>
             </dependency>
             <dependency>
                 <groupId>org.springdoc</groupId>
@@ -149,14 +164,9 @@
                 <version>1.5.8</version>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-annotations</artifactId>
-                <version>9.4.42.v20210604</version>
-            </dependency>
-            <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-backend-i18n</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <groupId>org.eclipse.jetty.websocket</groupId>
+                <artifactId>websocket-api</artifactId>
+                <version>9.4.43.v20210629</version>
             </dependency>
             <dependency>
                 <groupId>org.latencyutils</groupId>
@@ -165,48 +175,53 @@
             </dependency>
             <dependency>
                 <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-chat-core</artifactId>
+                <artifactId>perobobbot-command</artifactId>
                 <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-transport-native-unix-common</artifactId>
+                <version>4.1.67.Final</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-aop</artifactId>
-                <version>5.3.8</version>
-            </dependency>
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-codec</artifactId>
-                <version>4.1.65.Final</version>
+                <version>5.3.9</version>
             </dependency>
             <dependency>
                 <groupId>jplugman</groupId>
                 <artifactId>jplugman-manager</artifactId>
-                <version>2.0.5</version>
-            </dependency>
-            <dependency>
-                <groupId>org.ow2.asm</groupId>
-                <artifactId>asm-commons</artifactId>
-                <version>9.0</version>
+                <version>2.0.6</version>
             </dependency>
             <dependency>
                 <groupId>org.glassfish.jaxb</groupId>
                 <artifactId>jaxb-runtime</artifactId>
-                <version>2.3.4</version>
+                <version>2.3.5</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-io</artifactId>
+                <version>9.4.43.v20210629</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ow2.asm</groupId>
+                <artifactId>asm-commons</artifactId>
+                <version>9.1</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-config</artifactId>
-                <version>5.5.0</version>
+                <version>5.5.2</version>
             </dependency>
             <dependency>
                 <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-chat-advanced</artifactId>
+                <artifactId>perobobbot-backend-i18n</artifactId>
                 <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-webapp</artifactId>
-                <version>9.4.42.v20210604</version>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-codec-dns</artifactId>
+                <version>4.1.67.Final</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.plugin</groupId>
@@ -214,44 +229,39 @@
                 <version>2.0.0.RELEASE</version>
             </dependency>
             <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-template</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-annotations</artifactId>
+                <version>9.4.43.v20210629</version>
             </dependency>
             <dependency>
                 <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-twitch-oauth-impl</artifactId>
+                <artifactId>perobobbot-data-event</artifactId>
                 <version>1.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-access</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-resolver</artifactId>
-                <version>4.1.65.Final</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-expression</artifactId>
-                <version>5.3.8</version>
+                <version>5.3.9</version>
             </dependency>
             <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-data-service</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-handler-proxy</artifactId>
+                <version>4.1.67.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-el</artifactId>
+                <version>9.0.52</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-web</artifactId>
-                <version>5.3.8</version>
+                <version>5.3.9</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-guava</artifactId>
-                <version>2.12.3</version>
+                <version>2.12.4</version>
             </dependency>
             <dependency>
                 <groupId>com.sun.activation</groupId>
@@ -259,19 +269,14 @@
                 <version>1.2.2</version>
             </dependency>
             <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-rest-controller</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-webapp</artifactId>
+                <version>9.4.43.v20210629</version>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.jetty.websocket</groupId>
-                <artifactId>websocket-client</artifactId>
-                <version>9.4.42.v20210604</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.tomcat.embed</groupId>
-                <artifactId>tomcat-embed-el</artifactId>
-                <version>9.0.46</version>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-client</artifactId>
+                <version>9.4.43.v20210629</version>
             </dependency>
             <dependency>
                 <groupId>com.google.errorprone</groupId>
@@ -281,27 +286,47 @@
             <dependency>
                 <groupId>org.springframework.data</groupId>
                 <artifactId>spring-data-jpa</artifactId>
-                <version>2.5.1</version>
+                <version>2.5.4</version>
             </dependency>
             <dependency>
                 <groupId>io.projectreactor</groupId>
                 <artifactId>reactor-core</artifactId>
-                <version>3.4.6</version>
+                <version>3.4.9</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-actuator</artifactId>
+                <version>2.5.4</version>
             </dependency>
             <dependency>
                 <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-twitch-api</artifactId>
+                <artifactId>perobobbot-twitch-event-sub-manager</artifactId>
                 <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>jplugman</groupId>
                 <artifactId>jplugman-tools</artifactId>
-                <version>2.0.5</version>
+                <version>2.0.6</version>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish</groupId>
+                <artifactId>javax.el</artifactId>
+                <version>3.0.1-b08</version>
             </dependency>
             <dependency>
                 <groupId>jplugman</groupId>
                 <artifactId>jplugman-api</artifactId>
-                <version>2.0.5</version>
+                <version>2.0.6</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-servlets</artifactId>
+                <version>9.4.43.v20210629</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>5.3.9</version>
             </dependency>
             <dependency>
                 <groupId>org.springdoc</groupId>
@@ -309,19 +334,29 @@
                 <version>1.5.8</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-actuator</artifactId>
-                <version>2.5.1</version>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-data-domain</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context</artifactId>
-                <version>5.3.8</version>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-lang</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-tx</artifactId>
-                <version>5.3.8</version>
+                <version>5.3.9</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-transport</artifactId>
+                <version>4.1.67.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-resolver-dns</artifactId>
+                <version>4.1.67.Final</version>
             </dependency>
             <dependency>
                 <groupId>jakarta.websocket</groupId>
@@ -329,39 +364,19 @@
                 <version>1.1.2</version>
             </dependency>
             <dependency>
-                <groupId>com.fasterxml.jackson.dataformat</groupId>
-                <artifactId>jackson-dataformat-yaml</artifactId>
-                <version>2.12.3</version>
-            </dependency>
-            <dependency>
                 <groupId>org.javassist</groupId>
                 <artifactId>javassist</artifactId>
                 <version>3.27.0-GA</version>
             </dependency>
             <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-yaml</artifactId>
+                <version>2.12.4</version>
+            </dependency>
+            <dependency>
                 <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-plugin</artifactId>
+                <artifactId>perobobbot-discord-oauth-impl</artifactId>
                 <version>1.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-validation</artifactId>
-                <version>2.5.1</version>
-            </dependency>
-            <dependency>
-                <groupId>jakarta.annotation</groupId>
-                <artifactId>jakarta.annotation-api</artifactId>
-                <version>1.3.5</version>
-            </dependency>
-            <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-xml</artifactId>
-                <version>9.4.42.v20210604</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.security</groupId>
-                <artifactId>spring-security-web</artifactId>
-                <version>5.5.0</version>
             </dependency>
             <dependency>
                 <groupId>perobobbot</groupId>
@@ -369,19 +384,34 @@
                 <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
+                <groupId>jakarta.annotation</groupId>
+                <artifactId>jakarta.annotation-api</artifactId>
+                <version>1.3.5</version>
+            </dependency>
+            <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-extension</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-validation</artifactId>
+                <version>2.5.4</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.12.4</version>
+            </dependency>
+            <dependency>
                 <groupId>com.fasterxml</groupId>
                 <artifactId>classmate</artifactId>
                 <version>1.5.1</version>
             </dependency>
             <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-databind</artifactId>
-                <version>2.12.3</version>
-            </dependency>
-            <dependency>
-                <groupId>io.projectreactor.netty</groupId>
-                <artifactId>reactor-netty-http</artifactId>
-                <version>1.0.7</version>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-web</artifactId>
+                <version>5.5.2</version>
             </dependency>
             <dependency>
                 <groupId>com.sun.istack</groupId>
@@ -389,24 +419,29 @@
                 <version>3.0.12</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.data</groupId>
-                <artifactId>spring-data-rest-core</artifactId>
-                <version>3.5.1</version>
-            </dependency>
-            <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-jcl</artifactId>
-                <version>5.3.8</version>
+                <version>5.3.9</version>
             </dependency>
             <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-resolver-dns</artifactId>
-                <version>4.1.65.Final</version>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-plugin</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-rest-core</artifactId>
+                <version>3.5.4</version>
+            </dependency>
+            <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-data-jpa</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-annotations</artifactId>
-                <version>2.12.3</version>
+                <version>2.12.4</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.retry</groupId>
@@ -414,9 +449,19 @@
                 <version>1.3.1</version>
             </dependency>
             <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-servlet</artifactId>
+                <version>9.4.43.v20210629</version>
+            </dependency>
+            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-webflux</artifactId>
-                <version>2.5.1</version>
+                <version>2.5.4</version>
+            </dependency>
+            <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-twitch-oauth-impl</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.google.guava</groupId>
@@ -424,34 +469,24 @@
                 <version>30.1.1-jre</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-actuator-autoconfigure</artifactId>
-                <version>2.5.1</version>
-            </dependency>
-            <dependency>
                 <groupId>net.minidev</groupId>
                 <artifactId>accessors-smart</artifactId>
                 <version>2.4.7</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-slf4j-impl</artifactId>
-                <version>2.14.1</version>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-security-reactor</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.jetty.websocket</groupId>
-                <artifactId>websocket-api</artifactId>
-                <version>9.4.42.v20210604</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-actuator-autoconfigure</artifactId>
+                <version>2.5.4</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-integration</artifactId>
-                <version>2.5.1</version>
-            </dependency>
-            <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-twitch-oauth-api</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <version>2.5.4</version>
             </dependency>
             <dependency>
                 <groupId>jakarta.persistence</groupId>
@@ -459,34 +494,14 @@
                 <version>2.2.3</version>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-servlets</artifactId>
-                <version>9.4.42.v20210604</version>
+                <groupId>org.eclipse.jetty.websocket</groupId>
+                <artifactId>javax-websocket-client-impl</artifactId>
+                <version>9.4.43.v20210629</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.hateoas</groupId>
                 <artifactId>spring-hateoas</artifactId>
-                <version>1.3.1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-util-ajax</artifactId>
-                <version>9.4.42.v20210604</version>
-            </dependency>
-            <dependency>
-                <groupId>io.projectreactor.netty</groupId>
-                <artifactId>reactor-netty-core</artifactId>
-                <version>1.0.7</version>
-            </dependency>
-            <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-servlet</artifactId>
-                <version>9.4.42.v20210604</version>
-            </dependency>
-            <dependency>
-                <groupId>org.eclipse.jetty.websocket</groupId>
-                <artifactId>javax-websocket-client-impl</artifactId>
-                <version>9.4.42.v20210604</version>
+                <version>1.3.3</version>
             </dependency>
             <dependency>
                 <groupId>com.zaxxer</groupId>
@@ -494,24 +509,19 @@
                 <version>4.0.3</version>
             </dependency>
             <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-transport-native-unix-common</artifactId>
-                <version>4.1.65.Final</version>
-            </dependency>
-            <dependency>
-                <groupId>org.eclipse.jetty.websocket</groupId>
-                <artifactId>websocket-common</artifactId>
-                <version>9.4.42.v20210604</version>
-            </dependency>
-            <dependency>
                 <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-proxy</artifactId>
+                <artifactId>perobobbot-twitch-client-webclient</artifactId>
                 <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-jetty</artifactId>
-                <version>2.5.1</version>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>5.3.9</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-crypto</artifactId>
+                <version>5.5.2</version>
             </dependency>
             <dependency>
                 <groupId>perobobbot</groupId>
@@ -519,39 +529,14 @@
                 <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-jetty</artifactId>
+                <version>2.5.4</version>
+            </dependency>
+            <dependency>
                 <groupId>org.webjars</groupId>
                 <artifactId>webjars-locator-core</artifactId>
                 <version>0.46</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.classgraph</groupId>
-                <artifactId>classgraph</artifactId>
-                <version>4.8.69</version>
-            </dependency>
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-codec-dns</artifactId>
-                <version>4.1.65.Final</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-jdbc</artifactId>
-                <version>5.3.8</version>
-            </dependency>
-            <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-rest-com</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-twitch-client-webclient</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-transport</artifactId>
-                <version>4.1.65.Final</version>
             </dependency>
             <dependency>
                 <groupId>perobobbot</groupId>
@@ -559,9 +544,24 @@
                 <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
+                <groupId>io.github.classgraph</groupId>
+                <artifactId>classgraph</artifactId>
+                <version>4.8.69</version>
+            </dependency>
+            <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-proxy</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-handler</artifactId>
+                <version>4.1.67.Final</version>
+            </dependency>
+            <dependency>
                 <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-plus</artifactId>
-                <version>9.4.42.v20210604</version>
+                <artifactId>jetty-http</artifactId>
+                <version>9.4.43.v20210629</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.logging</groupId>
@@ -571,7 +571,7 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.module</groupId>
                 <artifactId>jackson-module-parameter-names</artifactId>
-                <version>2.12.3</version>
+                <version>2.12.4</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate.common</groupId>
@@ -580,8 +580,13 @@
             </dependency>
             <dependency>
                 <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-security-com</artifactId>
+                <artifactId>perobobbot-twitch-oauth-api</artifactId>
                 <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-plus</artifactId>
+                <version>9.4.43.v20210629</version>
             </dependency>
             <dependency>
                 <groupId>antlr</groupId>
@@ -589,19 +594,9 @@
                 <version>2.7.7</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-core</artifactId>
-                <version>2.14.1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-http</artifactId>
-                <version>9.4.42.v20210604</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot</artifactId>
-                <version>2.5.1</version>
+                <groupId>io.micrometer</groupId>
+                <artifactId>micrometer-core</artifactId>
+                <version>1.7.3</version>
             </dependency>
             <dependency>
                 <groupId>io.swagger.core.v3</groupId>
@@ -609,9 +604,9 @@
                 <version>2.1.9</version>
             </dependency>
             <dependency>
-                <groupId>io.micrometer</groupId>
-                <artifactId>micrometer-core</artifactId>
-                <version>1.7.0</version>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-oauth-tools</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>io.netty</groupId>
@@ -619,29 +614,19 @@
                 <version>osx-x86_64</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-api</artifactId>
-                <version>2.14.1</version>
-            </dependency>
-            <dependency>
                 <groupId>org.yaml</groupId>
                 <artifactId>snakeyaml</artifactId>
                 <version>1.28</version>
             </dependency>
             <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-messaging</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webflux</artifactId>
+                <version>5.3.9</version>
             </dependency>
             <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-twitch-client-api</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>org.eclipse.jetty.websocket</groupId>
-                <artifactId>javax-websocket-server-impl</artifactId>
-                <version>9.4.42.v20210604</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot</artifactId>
+                <version>2.5.4</version>
             </dependency>
             <dependency>
                 <groupId>io.swagger.core.v3</groupId>
@@ -649,29 +634,9 @@
                 <version>2.1.9</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-webflux</artifactId>
-                <version>5.3.8</version>
-            </dependency>
-            <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-eventsub</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
                 <groupId>org.glassfish.jaxb</groupId>
                 <artifactId>txw2</artifactId>
-                <version>2.3.4</version>
-            </dependency>
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-codec-socks</artifactId>
-                <version>4.1.65.Final</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-aop</artifactId>
-                <version>2.5.1</version>
+                <version>2.3.5</version>
             </dependency>
             <dependency>
                 <groupId>io.netty</groupId>
@@ -679,23 +644,28 @@
                 <version>linux-x86_64</version>
             </dependency>
             <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-codec-http2</artifactId>
-                <version>4.1.65.Final</version>
-            </dependency>
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-buffer</artifactId>
-                <version>4.1.65.Final</version>
-            </dependency>
-            <dependency>
                 <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-http</artifactId>
+                <artifactId>perobobbot-endpoint</artifactId>
                 <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
+                <groupId>org.eclipse.jetty.websocket</groupId>
+                <artifactId>javax-websocket-server-impl</artifactId>
+                <version>9.4.43.v20210629</version>
+            </dependency>
+            <dependency>
                 <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-twitch-event-sub-manager</artifactId>
+                <artifactId>perobobbot-security-com</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-aop</artifactId>
+                <version>2.5.4</version>
+            </dependency>
+            <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-rest-com</artifactId>
                 <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
@@ -704,39 +674,34 @@
                 <version>9999.0-empty-to-avoid-conflict-with-guava</version>
             </dependency>
             <dependency>
-                <groupId>org.aspectj</groupId>
-                <artifactId>aspectjweaver</artifactId>
-                <version>1.9.6</version>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-twitch-api</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-security</artifactId>
-                <version>9.4.42.v20210604</version>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>1.9.7</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-security</artifactId>
-                <version>2.5.1</version>
-            </dependency>
-            <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-data-security</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <version>2.5.4</version>
             </dependency>
             <dependency>
                 <groupId>jplugman</groupId>
                 <artifactId>jplugman-annotation</artifactId>
-                <version>2.0.5</version>
+                <version>2.0.6</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-actuator</artifactId>
-                <version>2.5.1</version>
+                <version>2.5.4</version>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-util</artifactId>
-                <version>9.4.42.v20210604</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>2.5.4</version>
             </dependency>
             <dependency>
                 <groupId>com.h2database</groupId>
@@ -744,29 +709,14 @@
                 <version>1.4.200</version>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-continuation</artifactId>
-                <version>9.4.42.v20210604</version>
-            </dependency>
-            <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt</artifactId>
                 <version>0.9.1</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-                <version>2.5.1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-reactor-netty</artifactId>
-                <version>2.5.1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.integration</groupId>
-                <artifactId>spring-integration-core</artifactId>
-                <version>5.5.0</version>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-codec-http</artifactId>
+                <version>4.1.67.Final</version>
             </dependency>
             <dependency>
                 <groupId>org.webjars</groupId>
@@ -775,17 +725,12 @@
             </dependency>
             <dependency>
                 <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-security-core</artifactId>
+                <artifactId>perobobbot-discord-resources</artifactId>
                 <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.jetty.websocket</groupId>
-                <artifactId>websocket-servlet</artifactId>
-                <version>9.4.42.v20210604</version>
-            </dependency>
-            <dependency>
                 <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-data-domain</artifactId>
+                <artifactId>perobobbot-security-core</artifactId>
                 <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
@@ -794,29 +739,39 @@
                 <version>3.8.0</version>
             </dependency>
             <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-lang</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-security</artifactId>
+                <version>9.4.43.v20210629</version>
             </dependency>
             <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-common</artifactId>
-                <version>4.1.65.Final</version>
-            </dependency>
-            <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-extension</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-handler-proxy</artifactId>
-                <version>4.1.65.Final</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-reactor-netty</artifactId>
+                <version>2.5.4</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-websocket</artifactId>
-                <version>5.3.8</version>
+                <version>5.3.9</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-slf4j-impl</artifactId>
+                <version>2.17.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty.websocket</groupId>
+                <artifactId>websocket-server</artifactId>
+                <version>9.4.43.v20210629</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.integration</groupId>
+                <artifactId>spring-integration-core</artifactId>
+                <version>5.5.3</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>2.17.0</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
@@ -826,12 +781,27 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-jsr310</artifactId>
-                <version>2.12.3</version>
+                <version>2.12.4</version>
+            </dependency>
+            <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-data-security</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-discord-oauth-api</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-server</artifactId>
-                <version>9.4.42.v20210604</version>
+                <artifactId>jetty-continuation</artifactId>
+                <version>9.4.43.v20210629</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-util</artifactId>
+                <version>9.4.43.v20210629</version>
             </dependency>
             <dependency>
                 <groupId>jakarta.xml.bind</groupId>
@@ -840,18 +810,43 @@
             </dependency>
             <dependency>
                 <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-oauth-tools</artifactId>
+                <artifactId>perobobbot-oauth</artifactId>
                 <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-codec-socks</artifactId>
+                <version>4.1.67.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-resolver</artifactId>
+                <version>4.1.67.Final</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-json</artifactId>
-                <version>2.5.1</version>
+                <version>2.5.4</version>
+            </dependency>
+            <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-messaging</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty.websocket</groupId>
+                <artifactId>websocket-servlet</artifactId>
+                <version>9.4.43.v20210629</version>
+            </dependency>
+            <dependency>
+                <groupId>io.projectreactor.netty</groupId>
+                <artifactId>reactor-netty-http</artifactId>
+                <version>1.0.10</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-autoconfigure</artifactId>
-                <version>2.5.1</version>
+                <version>2.5.4</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate</groupId>
@@ -859,19 +854,14 @@
                 <version>5.5.0.Final</version>
             </dependency>
             <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-oauth</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-server</artifactId>
+                <version>9.4.43.v20210629</version>
             </dependency>
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>failureaccess</artifactId>
                 <version>1.0.1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-io</artifactId>
-                <version>9.4.42.v20210604</version>
             </dependency>
             <dependency>
                 <groupId>org.flywaydb</groupId>
@@ -880,13 +870,8 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>spring-core</artifactId>
-                <version>5.3.8</version>
-            </dependency>
-            <dependency>
-                <groupId>org.eclipse.jetty.websocket</groupId>
-                <artifactId>websocket-server</artifactId>
-                <version>9.4.42.v20210604</version>
+                <artifactId>spring-webmvc</artifactId>
+                <version>5.3.9</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.velocity</groupId>
@@ -895,23 +880,43 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>spring-webmvc</artifactId>
-                <version>5.3.8</version>
+                <artifactId>spring-core</artifactId>
+                <version>5.3.9</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-common</artifactId>
+                <version>4.1.67.Final</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-messaging</artifactId>
-                <version>5.5.0</version>
-            </dependency>
-            <dependency>
-                <groupId>perobobbot</groupId>
-                <artifactId>perobobbot-data-jpa</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <version>5.5.2</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-beans</artifactId>
-                <version>5.3.8</version>
+                <version>5.3.9</version>
+            </dependency>
+            <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-chat-advanced</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-commons</artifactId>
+                <version>2.5.4</version>
+            </dependency>
+            <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-data-service</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-http</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>jakarta.servlet</groupId>
@@ -919,19 +924,34 @@
                 <version>4.0.4</version>
             </dependency>
             <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-twitch-client-api</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>io.projectreactor.netty</groupId>
+                <artifactId>reactor-netty-core</artifactId>
+                <version>1.0.10</version>
+            </dependency>
+            <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-template</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
                 <groupId>io.swagger.core.v3</groupId>
                 <artifactId>swagger-models</artifactId>
                 <version>2.1.9</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.data</groupId>
-                <artifactId>spring-data-commons</artifactId>
-                <version>2.5.1</version>
-            </dependency>
-            <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-orm</artifactId>
-                <version>5.3.8</version>
+                <version>5.3.9</version>
+            </dependency>
+            <dependency>
+                <groupId>jplugman</groupId>
+                <artifactId>jplugman-loader</artifactId>
+                <version>2.0.6</version>
             </dependency>
             <dependency>
                 <groupId>org.springdoc</groupId>
@@ -939,14 +959,24 @@
                 <version>1.5.8</version>
             </dependency>
             <dependency>
-                <groupId>jplugman</groupId>
-                <artifactId>jplugman-loader</artifactId>
-                <version>2.0.5</version>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-buffer</artifactId>
+                <version>4.1.67.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-chat-core</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>io.netty</groupId>
-                <artifactId>netty-codec-http</artifactId>
-                <version>4.1.65.Final</version>
+                <artifactId>netty-codec-http2</artifactId>
+                <version>4.1.67.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty.websocket</groupId>
+                <artifactId>websocket-common</artifactId>
+                <version>9.4.43.v20210629</version>
             </dependency>
             <dependency>
                 <groupId>org.hdrhistogram</groupId>
@@ -954,29 +984,24 @@
                 <version>2.1.12</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-aspects</artifactId>
-                <version>5.3.8</version>
+                <groupId>perobobbot</groupId>
+                <artifactId>perobobbot-eventsub</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-messaging</artifactId>
-                <version>5.3.8</version>
-            </dependency>
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-handler</artifactId>
-                <version>4.1.65.Final</version>
+                <version>5.3.9</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-jdk8</artifactId>
-                <version>2.12.3</version>
+                <version>2.12.4</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-jdbc</artifactId>
-                <version>2.5.1</version>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.32</version>
             </dependency>
             <dependency>
                 <groupId>net.minidev</groupId>
@@ -984,14 +1009,24 @@
                 <version>2.4.7</version>
             </dependency>
             <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>1.7.30</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-jdbc</artifactId>
+                <version>2.5.4</version>
             </dependency>
             <dependency>
                 <groupId>com.google.j2objc</groupId>
                 <artifactId>j2objc-annotations</artifactId>
                 <version>1.3</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-codec</artifactId>
+                <version>4.1.67.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aspects</artifactId>
+                <version>5.3.9</version>
             </dependency>
             <dependency>
                 <groupId>jakarta.validation</groupId>
@@ -1132,7 +1167,7 @@
                 </property>
             </activation>
             <properties>
-                <buildDir>${env.pluginDir}</buildDir>
+                <buildDir>${pluginDir}</buildDir>
             </properties>
         </profile>
         <profile>
