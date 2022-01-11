@@ -5,10 +5,7 @@ import lombok.Getter;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.Delegate;
-import perobobbot.lang.CastTool;
-import perobobbot.lang.ChatUser;
-import perobobbot.lang.Platform;
-import perobobbot.lang.Role;
+import perobobbot.lang.*;
 import perobobbot.plugin.twitch.chat.message.TagKey;
 import perobobbot.plugin.twitch.chat.message.Tags;
 import perobobbot.plugin.twitch.chat.message.from.PrivMsgFromTwitch;
@@ -45,6 +42,11 @@ public class TwitchUser implements ChatUser, TagsAndBadges {
     @Override
     public @NonNull Platform getPlatform() {
         return Platform.TWITCH;
+    }
+
+    @Override
+    public @NonNull UserIdentity toUserIdentity() {
+        return new TwitchIdentity(userId,userName.toLowerCase(),userName);
     }
 
     @Override
